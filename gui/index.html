@@ -7,54 +7,56 @@
         <script src="scripts/preview.js" defer></script>
     </head>
     <body>
-        <div id="inputs">
-            <input type="file" onchange={} id="picture"></input><br>
-            <input type="text" maxlength="20" placeholder="Wine name" id="winename"></input><br>
-            <input type="text" maxlength="20" placeholder="Name/s of the winemaker" id="maker"></input><br>
-            <input type="number" maxlength="4" a placeholder="Year of the harvest" id="year"></input><br>
-            <input type="text" maxlength="20" placeholder="Additional notes" id="notes"></input><br>
-            <input type="button" maxlength="20" value="Create Label"></input><br>
-        </div>
-        <div id="preview">
-            <div class="PreviewLabel">
-                <div class="textPreview" id="logo">Vinum logo</div>
-                <div class="textPreview" id="winenamepreview">exemplum vinum</div>
-                <div class="textPreview" id="makerpreview">Ioannes Doe</div>
-                <div class="textPreview" id="yearpreview">Jahrgang MMXLII</div>
-                <div class="textPreview" id="notespreview">Notae in Vinum</div>
+        <div class="inputWrapper">
+            <div id="inputs">
+                <input type="file" onchange={} id="picture"></input><br>
+                <input type="text" maxlength="20" placeholder="Wine name" id="winename"></input><br>
+                <input type="text" maxlength="20" placeholder="Name/s of the winemaker" id="maker"></input><br>
+                <input type="number" maxlength="4" a placeholder="Year of the harvest" id="year"></input><br>
+                <input type="text" maxlength="20" placeholder="Additional notes" id="notes"></input><br>
+                <input type="button" onclick="createLabels()" maxlength="20" value="Create Label"></input><br>
+            </div>
+            <div id="preview">
+                <div class="PreviewLabel">
+                    <div class="textPreview" id="logo">Vinum logo</div>
+                    <div class="textPreview" id="winenamepreview">exemplum vinum</div>
+                    <div class="textPreview" id="makerpreview">Ioannes Doe</div>
+                    <div class="textPreview" id="yearpreview">Jahrgang MMXLII</div>
+                    <div class="textPreview" id="notespreview">Notae in Vinum</div>
+                </div>
             </div>
         </div>
-        <div id="print">
+        <div id="print" class="hideme">
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="lastLabel"></div>
-
+    
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="lastLabel"></div>
-
+    
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="lastLabel"></div>
-
+    
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="lastLabel"></div>
-
+    
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="label"></div>
             <div class="lastLabel"></div>
-
+    
             <div class="labelLastRow"></div>
             <div class="labelLastRow"></div>
             <div class="labelLastRow"></div>

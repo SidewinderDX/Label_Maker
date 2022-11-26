@@ -20,6 +20,31 @@ document.getElementById('notes').addEventListener('keyup', e => {
 
 document.getElementById('picture').addEventListener('change', e => {
     document.getElementById('logo').innerHTML = "<img src=\"" + URL.createObjectURL(document.getElementById('picture').files[0]) + "\">";
-    document.getElementsByTagName('img').height = "10px";
-    document.getElementsByTagName('img').width = "10px";
 });
+
+function createLabels(){
+    var logo = "<img src=\"" + URL.createObjectURL(document.getElementById('picture').files[0]) + "\">";
+    var winename = document.getElementById('winename').value;
+    var maker = document.getElementById('maker').value;
+    var year = "Jahrgang " + document.getElementById('year').value;
+    var notes = document.getElementById('notes').value;
+
+    var parent = document.getElementById('print');
+    console.log("Childs:" + parent.childElementCount); 
+    var childs = parent.children;
+
+    var inHTML = "<div class=\"textPreview\">" + logo + "</div>\
+                  <div class=\"textPreview\">" + winename + "</div>\
+                  <div class=\"textPreview\">" + maker + "</div>\
+                  <div class=\"textPreview\">" + year + "</div>\
+                  <div class=\"textPreview\">" + notes + "</div></div>";
+    
+    for(var i=0; i < childs.length; i++){  
+        childs[i].innerHTML = inHTML;
+          
+    }
+
+    document.getElementsByClassName('inputWrapper')[0].style.display = "none";
+    var print = document.getElementById('print');
+    print.classList.remove("hideme");
+};

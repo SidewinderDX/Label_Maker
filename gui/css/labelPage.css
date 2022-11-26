@@ -1,12 +1,17 @@
 #print{
     /*border: 0.5mm solid black;
     */
-    display: none;
     width: 210mm;
     height: 297mm;
+    float: left;
+}
+
+.hideme{
+    display: none;
 }
 
 .label{
+    text-align: center;
     border-right: 0.5mm dotted black;
     border-bottom: 0.5mm dotted black;
     width: 41.5mm;
@@ -15,6 +20,7 @@
 }
 
 .lastLabel{
+    text-align: center;
     border-bottom: 0.5mm dotted black;
     width: 42mm;
     height: 49mm;
@@ -22,8 +28,16 @@
 }
 
 .labelLastRow{
+    text-align: center;
     border-right: 0.5mm dotted black;
     width: 41.5mm;
+    height: 49.5mm;
+    float: left;
+}
+
+.lastLabel_Row{
+    text-align: center;
+    width: 42mm;
     height: 49.5mm;
     float: left;
 }

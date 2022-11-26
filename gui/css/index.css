@@ -4,7 +4,7 @@ html{
     margin: auto;
 }
 
-body{
+.inputWrapper{
     margin: auto;
     margin-top: 2%;
     width: fit-content;
