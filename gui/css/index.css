@@ -1,0 +1,54 @@
+html{
+    background-color: #282A3A;
+    color: #735F32;
+    margin: auto;
+}
+
+body{
+    margin: auto;
+    margin-top: 2%;
+    width: fit-content;
+}
+
+#inputs{
+    margin: auto;
+    background-color: #d9d9d9;
+    border: 1mm solid gray;
+    border-radius: 3mm;
+    width: fit-content;
+    padding: 1mm;
+    float: left;
+}
+
+input{
+    margin-top: 1mm;
+}
+
+#preview{
+    margin: auto;
+    background-color: #d9d9d9;
+    border: 1mm solid gray;
+    border-radius: 3mm;
+    width: fit-content;
+    float: left;
+    text-align: center;
+}
+
+.PreviewLabel{
+    width: 41.5mm;
+    height: 49mm;
+}
+
+
+.textPreview{
+   height: 20%;
+}
+
+#logo{
+    padding-top: 2mm;
+}
+
+img{
+    
+    height: 10mm;
+}
